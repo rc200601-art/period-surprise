@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>🌸 For You 🌸</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffd1dc,#ffeaf4);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+text-align:center;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:25px;
+max-width:500px;
+width:100%;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+animation:fade .5s;
+}
+
+h1,h2{
+color:#ff1493;
+}
+
+button{
+background:#ff69b4;
+color:white;
+border:none;
+padding:12px 24px;
+margin:10px;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+img{
+width:100%;
+max-width:320px;
+border-radius:20px;
+margin-top:15px;
+}
+
+.big{
+font-size:40px;
+font-weight:bold;
+color:#ff1493;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card" id="app">
+
+<h1>🌸 Have your periods started?</h1>
+
+<button onclick="jhooti()">Yes</button>
+<button onclick="jhooti()">No</button>
+
+</div>
+
+<script>
+
+function jhooti(){
+document.getElementById("app").innerHTML=`
+<h1>Jhooti 😭</h1>
+
+<button onclick="bruno()">Yes</button>
+<button onclick="bruno()">Yes</button>
+`;
+}
+
+function bruno(){
+document.getElementById("app").innerHTML=`
+<img src="bruno.jpg">
+
+<h2>🐶 Dr Bruno is there at your service</h2>
+
+<p>I'll help you with your periods.</p>
+
+<p>Rayan told me mein Hindi mein baat karu 😌</p>
+
+<button onclick="pink()">Next</button>
+`;
+}
+
+function pink(){
+document.getElementById("app").innerHTML=`
+<h2>🌸 Aapke liye Pink Rose</h2>
+
+<img src="pink-rose.jpg">
+
+<button onclick="red()">Next</button>
+`;
+}
+
+function red(){
+document.getElementById("app").innerHTML=`
+<h2>❤️ Aapke liye Red Rose</h2>
+
+<img src="red-rose.jpg">
+
+<button onclick="black()">Next</button>
+`;
+}
+
+function black(){
+document.getElementById("app").innerHTML=`
+<h2>🖤 Aapke liye Black Rose</h2>
+
+<img src="black-rose.jpg">
+
+<button onclick="smile()">Next</button>
+`;
+}
+
+function smile(){
+document.getElementById("app").innerHTML=`
+<p>I know these could not remove the pain...</p>
+
+<div class="big">
+IT COULD MAKE YOU SMILE ❤️
+</div>
+
+<button onclick="finale()">Next</button>
+`;
+}
+
+function finale(){
+document.getElementById("app").innerHTML=`
+<h1>STAY TUNED FOR MORE >>></h1>
+
+<img src="bruno-rayan.jpg">
+`;
+}
+
+</script>
+
+</body>
+</html>
+```
